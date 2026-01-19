@@ -22,12 +22,10 @@ const Home = () => {
             setValueReached(true)
         }
     }, [value])
-
     console.log("parent re-render")
-
     return (
         <div>
-            {isValueReached && (<div style={{ textAlign: "center", color: "pink" }}>Value is reached</div>)}
+            {isValueReached && (<div>Value is reached</div>)}
             <Children />
             <button onClick={valueBtnChange}style={{ padding: "1rem", marginLeft: "2rem", background: "pink" }}>Click Me {value}</button>
             <button onClick={valueBtnChange2} style={{ padding: "1rem", marginLeft: "2rem", background: "pink" }}>Click Me A {value2}</button>
