@@ -21,7 +21,7 @@ const Counterapp = () => {
     },[addValue])
   return (
     <div>
-    { reachedValue && <div>Value is reached</div>}
+    { reachedValue && <h3 style={{marginLeft:"1rem"}}>Value is reached</h3>}
     <button onClick={buttonHandler}  style={{marginLeft:"1rem"}}>Add Values {addValue}</button>
     <button onClick={buttonHandler2} style={{marginLeft:"1rem"}}>Sub Values {subValue}</button>
     </div>
