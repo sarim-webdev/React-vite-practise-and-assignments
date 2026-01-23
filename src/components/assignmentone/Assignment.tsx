@@ -10,7 +10,7 @@ const Assignment = () => {
  variable name ka saat index ko target kar ka upadatedValues kar rahe hain matlab 1 hogi values
  yahan par  React ko pata chal gaya ke state change hui Component dobara render hota hai UI 
  automatically update ho jata hai */
-  const handleClick = (index) => {
+  const handleClick = (index : number) => {
     const updatedValues = [...values];
     updatedValues[index] = updatedValues[index] + 1;
     setValues(updatedValues);
@@ -22,7 +22,7 @@ const Assignment = () => {
    */
   return (
     <div>
-      {values.map((item, index) => (
+      {values.map((item : number, index : number) => (
         <button key={index} onClick={() => handleClick(index)}style={{ margin: "10px", padding: "10px" }}> Button {index + 1}: {item}</button> ))}
     </div>
   );
